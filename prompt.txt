@@ -1,0 +1,9 @@
+implement header and footer. invoke header and footer within layout.tsx. the header contains logo at he left end and Home, Posts, Create post at the right end. when either logi or Home is clicked the root route page is displayed. the root route page contains the tile WelCome to my blog followed by a 3 line loren imsum text. the footer shows copy right statement centered at the bottom of the window. create navigation to show Posts screen and create-post screen at route /posts and /create-post
+
+use prefers-color-scheme defined in globals.css for header and footer
+
+under the header "Posts", display a list of titkes of posts obtained by fetching from uri https://dummyjson.com/posts?limit=10, create a PostsList function to hold the display function. don't use client component. 
+
+make each title clickable. when clicked it is routed to the detailed page, which is dynamc, parameterized by id of post object, shows the title and body text.
+
+refactor the code to move PostList and fetchPosts to a file named posts-list.tsx under the components directory. make PostsList to invoke fechPosts inside it.
